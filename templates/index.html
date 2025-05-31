@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub यूज़र स्क्रैपर</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub यूज़र्स जानकारी खोजें</h1>
+
+        <form id="scrape-form">
+            <label>न्यूनतम Followers:
+                <input type="number" name="min_followers" value="100" required>
+            </label>
+
+            <label>स्थान (जैसे India, USA):
+                <input type="text" name="location">
+            </label>
+
+            <label>न्यूनतम Repos:
+                <input type="number" name="min_repos">
+            </label>
+
+            <label>शुरुआती पेज:
+                <input type="number" name="start_page" value="1">
+            </label>
+
+            <label>कितने पेज स्क्रैप करने हैं:
+                <input type="number" name="max_pages" value="3">
+            </label>
+
+            <button type="submit">स्क्रैपिंग शुरू करें</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
